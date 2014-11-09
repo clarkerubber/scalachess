@@ -35,7 +35,7 @@ class DividerTest extends ChessTest {
       val divided = Divider(replay)
       println("Game 3 => " + divided)
       divided._1 must beSome.like {
-        case x => x must beBetween(24, 28)
+        case x => x must beBetween(20, 28)
       }
       divided._2 must beSome.like {
         case x => x must beBetween(40, 46)
